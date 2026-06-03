@@ -33,8 +33,13 @@ def input_int(msg):
     return valor
 
 def input_nome(msg):
-    nome = input(msg).strip()
-    for letra in nome:
-        if letra == " ":
-            
-
+    while True:
+        nome = input(msg).strip()
+        for letra in nome:
+            if letra == " ":
+                dois_nomes = True
+        if dois_nomes:
+            break
+        else:
+            print("Precisa de, no minimo, dois nomes")
+        return nome

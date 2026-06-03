@@ -2,7 +2,7 @@ from utils import *
 
 class Pessoa:
     def __init__(self):
-        self.nome = input("Digite o nome da pessoa: ")
+        self.nome = input_nome("Digite o nome da pessoa: ")
         self.idade = input_idade("Digite a idade: ", 0, 150)
         self.valor = input_float("Digite a altura: ")
 
