@@ -1,15 +1,16 @@
-from Pessoa import *
-from ContaBancaria import *
-from Produto import *
+from AOO.classes.Pessoa import *
+from AOO.classes.ContaBancaria import *
+from AOO.classes.Produto import *
+from AOO.classes.aluno import *
 
 from utils import *
 
 
-pessoa = Pessoa()
+# pessoa = Pessoa()
 
-pessoa.apresentar_dados()
+# pessoa.apresentar_dados()
 
-print(pessoa.nome)
+# print(pessoa.nome)
 
 
 conta = ContaBancaria()
@@ -32,9 +33,16 @@ except Exception as e:
     print("Deve ser um numero")
     print(f"error {e}")
 
+conta.exibir_extrato()
+
 
 produto = Produto()
 
 produto.comprar()
 produto.vender()
+
+aluno = Aluno()
+
+aluno.media()
+aluno.aprovado()
 

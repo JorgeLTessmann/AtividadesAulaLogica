@@ -28,7 +28,7 @@ def input_int(msg):
             valor = int(input(msg))
             break
         except Exception as e:
-            print("Idade deve ser apenas um numero inteiro!")
+            print("Deve ser apenas um numero inteiro!")
             print(f"Erro: {e}")
     return valor
 
