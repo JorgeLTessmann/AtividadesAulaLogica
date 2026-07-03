@@ -35,8 +35,31 @@ byd = CarroEletrico(
     consumo_eletrico = 12
 )
 
+
+byd_king = CarroHibrido(
+    modelo = "King",
+    marca = "BYD",
+    ano = 2025,
+    cor = "Branco",
+    placa = "BbB-4321",
+    volume_tanque = 55,
+    tipo_combustivel = "Flex",
+    cambio = "Automático",
+    consumo_combustao = 10,
+    capacidade_bateria = 100, 
+    tipo_bateria = "LFP",
+    autonomia = 75,
+    consumo_eletrico = 12
+)
+
 print(moto)
 print(voyage)
 print(byd)
+
+
 voyage.abastecer(10)
 byd.recarregar(12)
+
+byd_king.abastecer(10)
+byd_king.recarregar(10)
+byd_king.carga_rapida()

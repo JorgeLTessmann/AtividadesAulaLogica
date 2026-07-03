@@ -4,7 +4,7 @@ class CarroCombustao(Veiculo):
     def __init__(self, modelo, marca, cor, ano, placa,
                   volume_tanque, tipo_combustivel, cambio, consumo_combustao): # especificas para carros a combustão (C.combustao)
         
-        super().__init__(modelo, marca, cor, ano, placa)
+        Veiculo.__init__(self, modelo, marca, cor, ano, placa)
         self.volume_tanque = volume_tanque
         self.nivel_tanque = 0
         self.tipo_combustivel = tipo_combustivel
